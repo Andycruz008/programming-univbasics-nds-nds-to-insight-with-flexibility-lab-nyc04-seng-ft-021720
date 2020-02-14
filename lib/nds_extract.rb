@@ -33,13 +33,14 @@ end
 
 def movies_with_director_key(name, movies_collection)
   movies = []
-  movies_collection.each do
-  movie_data = movies
-  movies << movie_with_director_name(name,movie_data)
+ counter = 0
+while counter < movies_collection.length do
+  movie_data = movies_collection[counter]
+  movies << a_o_a_movies_with_director_names(name,movie_data)
+  counter += 1
 end
-  return movies
+movies
 end
-
 
 def gross_per_studio(collection)
   # GOAL: Given an Array of Hashes where each Hash represents a movie,

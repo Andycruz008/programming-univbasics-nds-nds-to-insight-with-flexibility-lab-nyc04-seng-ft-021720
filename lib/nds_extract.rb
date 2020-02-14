@@ -64,7 +64,7 @@ def movies_with_directors_set(source)
  counter = 0
   a_o_a_movies_by_dir = []
 
-  while i < source.length do
+  while counter < source.length do
     dir_info_hash = source[counter]
     director_name = dir_info_hash[:name]
     directors_movies = dir_info_hash[:movies]

@@ -33,9 +33,10 @@ end
 
 def movies_with_director_key(name, movies_collection)
   movies = []
-  movies_collection.each
+  movies_collection.each do
   movie_data = movies
   movies << movie_with_director_name(name,movie_data)
+end
   return movies
 end
 
